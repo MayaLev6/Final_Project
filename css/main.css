@@ -1,0 +1,131 @@
+/*Animations*/
+
+@keyframes enterScreen {
+    from {right: 100%;}
+    to {right: 0%;}
+}
+ 
+@keyframes zoomIn-fadeIn {
+    from {transform: scale(0.6, 0.6); opacity: 0;}
+    to {transform: scale(1,1); opacity: 1;}
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'Beatle-Font';
+    src: url(/fonts/Bootle-4B9l.ttf);
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+    background-color:#989779;
+  } 
+  
+  ::-webkit-scrollbar-thumb {
+    background: #514f46;
+    border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #34332d; 
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+     background-image: url("/media/Road.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    
+} */
+
+#beatlesDiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    animation-name: enterScreen;
+    animation-duration: 4s; 
+}
+
+#logoDiv{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 12%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    animation-name: zoomIn-fadeIn;
+    animation-duration: 4s;
+    cursor: default;
+}
+
+/*Header*/
+#mainNav .logo img{
+    height: 80px;
+    transition: height 0.4s;
+    padding: 10px;
+}
+
+#mainNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: #f6f6e8;
+    transition: background 0.4s;
+    font-family: 'Beatle-Font', serif;
+    z-index: 2;
+}
+
+#a{
+    background-image: url("/media/Road.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 721px;
+}
+
+#mainNav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+}
+
+#mainNav ul li a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    transition: color 0.4s;
+}
+
+section{
+    height: 500px;
+    font-family: 'Beatle-Font';
+}
+
+.bg-black{
+    background-color: #333 !important;
+}
+
+.txt-white a{
+    color: #f6f6e8 !important;
+}
