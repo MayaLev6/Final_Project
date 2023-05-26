@@ -10,11 +10,22 @@
     to {transform: scale(1,1); opacity: 1;}
 }
 
+@keyframes slideInScreen {
+    from {top: -100%;}
+    to {top: 0%;}
+}
+
+
 /*fonts*/
 
 @font-face {
     font-family: 'Beatle-Font';
     src: url(/fonts/Bootle-4B9l.ttf);
+}
+
+@font-face {
+    font-family: 'Hanoble';
+    src: url(/fonts/Hanoble.ttf);
 }
 
 /*Scroll Bar*/
@@ -38,15 +49,6 @@
     margin: 0;
     padding: 0;
 }
-
-/* body{
-     background-image: url("/media/Road.jpg");
-    background-size: cover;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    
-} */
 
 #beatlesDiv{
     position: absolute;
@@ -91,9 +93,11 @@
     transition: background 0.4s;
     font-family: 'Beatle-Font', serif;
     z-index: 2;
+    animation-name: slideInScreen;
+    animation-duration: 5s; 
 }
 
-#a{
+#section1{
     background-image: url("/media/Road.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -102,15 +106,18 @@
     height: 721px;
 }
 
-#b{
-    height: 500px;
+#beatlesDiv1{
     display: flex;
     align-items: flex-end;
-    }
+}
 
-#c{
-    display: flex;
-    flex-direction: row;
+#beatlesDiv1 img{
+    height: 70%;
+}
+
+#section2{
+    font-family: 'Hanoble', serif;
+    height: 721px;
     background-image: url("/media/Beatles-Section2bg.png");
     background-size: 100% 100%;
 }
@@ -129,28 +136,44 @@
     transition: color 0.4s;
 }
 
-section{
-    height: 500px;
-    font-family: 'Beatle-Font';
-}
-
 .bg-black{
-    background-color: #333 !important;
+    background-color: #1b1b1b !important;
 }
 
 .txt-white a{
     color: #f6f6e8 !important;
 }
 
-#intro{
-    background-color: red;
+#introDiv{
+    width: 57%;
+    background-color: #b7b7b758;
+    color: #1f1f1f;
     height: 50%;
-    margin-top: 125px;
-}
-
-#centerDiv{
-    width: 70%;
-    height: 100%;
+    margin-top: 195px;
+    border-radius: 20px;
+    position: relative;
+    right: 10px; 
     padding: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
+#beatlesDiv1{
+    animation-name: slideInScreen-fadeIn;
+    animation-duration: 4s; 
+}
+
+h1{
+    font-size: 500%;
+}
+
+p{
+    font-size: 160%;
+}
+
+#containerDiv{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative; 
+}

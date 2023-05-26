@@ -5,6 +5,7 @@ window.onbeforeunload = function () {
 window.addEventListener("scroll", function(){
     const logoImage = document.querySelector(".logo img");
     const mainNav = document.getElementById("mainNav");
+    const BeatlesSection2 = document.getElementById("Beatles-Section2");
 
     if(window.pageYOffset > 650){
         logoImage.style.height = "60px";
@@ -17,6 +18,5 @@ window.addEventListener("scroll", function(){
         logoImage.src = "media/Logo-Black.png";
         mainNav.classList.remove('bg-black');
         mainNav.classList.remove("txt-white");
-        
     }
 });
