@@ -102,6 +102,18 @@
     height: 721px;
 }
 
+#b{
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    }
+
+#c{
+    display: flex;
+    flex-direction: row;
+    background-image: url("/media/Beatles-Section2bg.png");
+    background-size: 100% 100%;
+}
 #mainNav ul{
     list-style: none;
     display: flex;
@@ -129,3 +141,16 @@ section{
 .txt-white a{
     color: #f6f6e8 !important;
 }
+
+#intro{
+    background-color: red;
+    height: 50%;
+    margin-top: 125px;
+}
+
+#centerDiv{
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+}
+

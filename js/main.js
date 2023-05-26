@@ -6,7 +6,7 @@ window.addEventListener("scroll", function(){
     const logoImage = document.querySelector(".logo img");
     const mainNav = document.getElementById("mainNav");
 
-    if(window.pageYOffset > 630){
+    if(window.pageYOffset > 650){
         logoImage.style.height = "60px";
         logoImage.src = "media/Logo.png";
         mainNav.classList.add('bg-black');
