@@ -140,7 +140,7 @@
 }
 
 #section1{
-    background-image: url("/media/Road.jpg");
+    background-image: url("/media/homepageMedia/Road.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -150,7 +150,7 @@
 #section2{
     font-family: 'Hanoble', serif;
     height: 721px;
-    background-image: url("/media/Beatles-Section2bg.png");
+    background-image: url("/media/homepageMedia/Beatles-Section2bg.png");
     background-size: 100% 100%;
 }
 
