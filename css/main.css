@@ -97,30 +97,6 @@
     animation-duration: 5s; 
 }
 
-#section1{
-    background-image: url("/media/Road.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 721px;
-}
-
-#beatlesDiv1{
-    display: flex;
-    align-items: flex-end;
-}
-
-#beatlesDiv1 img{
-    height: 70%;
-}
-
-#section2{
-    font-family: 'Hanoble', serif;
-    height: 721px;
-    background-image: url("/media/Beatles-Section2bg.png");
-    background-size: 100% 100%;
-}
 #mainNav ul{
     list-style: none;
     display: flex;
@@ -161,6 +137,30 @@
 #beatlesDiv1{
     animation-name: slideInScreen-fadeIn;
     animation-duration: 4s; 
+}
+
+#section1{
+    background-image: url("/media/Road.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 721px;
+}
+
+#section2{
+    font-family: 'Hanoble', serif;
+    height: 721px;
+    background-image: url("/media/Beatles-Section2bg.png");
+    background-size: 100% 100%;
+}
+
+#beatlesDiv1{
+    display: flex;
+    align-items: flex-end;
+}
+
+#beatlesDiv1 img{
+    height: 70%;
 }
 
 h1{
